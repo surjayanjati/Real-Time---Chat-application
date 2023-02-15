@@ -1,0 +1,370 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 70%;
+    height: 90%;
+    border: 15px solid deepskyblue;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Media Query For Main Box */
+
+@media screen and (max-width:695px) {
+    .main-box{
+        width: 100%;
+        height: 90%;
+        border: 15px solid deepskyblue;
+    
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Left Side Box */
+.left-box{
+    width: 20%;
+height: 100%;
+    border: 3px solid deepskyblue;
+    display: flex;
+    flex-direction: column;
+
+    
+  
+}
+.left-box #left-top-box{
+ width: 100%;
+ height: 20%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: crimson;
+    
+  
+}
+.left-box hr{
+    padding-top:1%;
+    background-color: deepskyblue;
+
+    
+  
+}
+.left-box #left-user-box{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+   background-color: darkslategray;
+       
+     
+   }
+   .left-box #left-user-box .heading-box{
+   width: 100%;
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     
+   }
+   .left-box #left-user-box  .heading-box h3{
+   
+    color: black;
+    font-weight: 800;
+       font-size: 2rem
+    ;
+     
+   }
+   /* User Heading Styling when max width is 500px */
+   @media screen and (max-width:800px) {
+    .left-box #left-user-box .heading-box h3{
+   
+        color: black;
+  
+           font-size: 1.3rem;
+        ;
+         
+       }
+}
+@media screen and (max-width:500px) {
+    .left-box #left-user-box .heading-box h3{
+   
+        color: black;
+  
+           font-size: 0.8rem;
+         
+       }
+}
+
+
+   .left-box #left-user-box  .heading-box i{
+    font-size: 1.8rem;
+    color: black;
+       
+     
+   }
+.left-box h1{
+    color: white;
+}
+.left-box #left-user-box #name-box-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  
+        align-items: center;
+      
+      
+    }
+    .left-box #left-user-box .user-name-box{
+       color: white;
+       font-weight: 700;
+          font-size: 1.3rem;
+          padding-top: 2%;
+        
+        }
+/* Media Query For User Name Showing Box*/
+@media screen and (max-width:750px) {
+    .left-box #left-user-box .user-name-box{
+      
+           font-size: 1rem;
+         }
+         .left-box #left-user-box .user-name-box{
+            color: white;
+            font-weight: 700;
+               font-size: 1rem;
+               padding-top: 1%;
+               padding-bottom: 1%;
+             }
+}
+@media screen and (max-width:500px) {
+   
+         .left-box #left-user-box .user-name-box{
+            color: white;
+            font-weight: 700;
+               font-size: 0.7rem;
+               padding-top: 1%;
+               padding-bottom: 1%;
+             }
+}
+/* Media Query For Left Box*/
+@media screen and (max-width:970px) {
+    .left-box h1{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .left-box h1{
+        font-size: 0.8rem;
+    }
+}
+
+/* Right Side Box */
+.right-box{
+    width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+   
+}
+.right-box #top-element-box{
+    height: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Right Box Header Section Div's Styling(Room name Box and Button Box) */
+.right-box #top-element-box #top-element-box1{
+   width: 40%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+ padding-left: 2%;
+   align-items: center;
+}
+.right-box #top-element-box #top-element-box1 i{
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding-right: 2%;
+ }
+.right-box #top-element-box #top-element-box1 h3{
+    color: aliceblue;
+ }
+.right-box #top-element-box #top-element-box2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+/* Right Box Button For Leaving The Chat */
+.right-box #top-element-box #leaveBtn{
+    width: 40%;
+    height: 45%;
+    border: 2px solid brown;
+    border-radius: 50px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.right-box #top-element-box a{
+   text-decoration: none;
+   color: white;
+}
+.right-box #top-element-box #leaveBtn:hover{
+    
+    border: 5px solid brown;
+   
+   
+    background-color:darkgreen;
+    color: white;
+  
+}
+
+/* Media query For Right Side Top Box*/
+
+@media screen and (max-width:1040px) {
+    .right-box #top-element-box #leaveBtn{
+        width: 60%;
+       
+    }
+}
+
+@media screen and (max-width:420px) {
+    .right-box #top-element-box #leaveBtn{
+        width: 60%;
+        font-size: 0.8rem;
+       
+    }
+}
+@media screen and (max-width:270px) {
+    .right-box #top-element-box #leaveBtn{
+        width: 70%;
+        font-size: 0.8rem;
+       
+    }
+}
+
+
+
+/* Right Side Box Lower Part Editing */
+
+.right-box hr{
+padding-top:1%;
+background-color: deepskyblue;
+   
+}
+.right-box form{
+ height: 87%;
+ width: 100%;
+   
+}
+.right-box #message-box{
+    height: 85%;
+    width: 100%;
+    
+    overflow-y: scroll;
+    background-color: black;
+      
+   }
+   .right-box #message-box .msgBox {
+    
+    height: 10%;
+    border: 7px solid black;
+    background-color: wheat;
+    border-radius: 15px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+   
+   }
+   .right-box #message-box  .right {
+  float: right;
+  clear: both;
+   }
+   .right-box #message-box  .left {
+    float: left;
+    clear: both;
+     }
+
+/*   Right Side Box Lower Part ( Input Fld Editing )----------*/   
+   .right-box #input-box{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  
+   
+   }
+
+   .right-box #input-box input{
+   width: 85%;
+   height: 85%;
+   outline: none;
+   }
+   .right-box #input-box input:focus{
+   
+    outline: none;
+    }
+   .right-box #input-box #sendBtn{
+    width: 15%;
+    height: 90%;
+    cursor: pointer;
+    background-color:  #0000FF;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: 700;
+    color: aliceblue;
+    
+    }
+    .right-box #input-box #sendBtn:hover{
+     
+        background-color:	#000080;
+       
+        color: aliceblue;
+        
+        }
+/* Media Query For Form Box Total Editing */
+@media screen and (max-width:520px) {
+    .right-box #input-box input{
+      
+        height: 89%;
+       
+        }
+        .right-box #input-box #sendBtn{
+    
+            height: 94%;
+    
+            font-size: 0.8rem;
+           
+            
+            }
+}

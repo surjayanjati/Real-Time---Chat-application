@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fe459fdc23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/quickchat.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <div class="main-box">
+        <div class="left-box">
+         <div id="left-top-box">
+             <h1>Chat-Box</h1>
+         </div>
+         <hr>
+         <div id="left-user-box">
+            <div class="heading-box">
+                <i class="fa-solid fa-users"></i> 
+                <h3>Members</h3>
+                <hr style="width: 60%;">
+            </div>
+            <div id="name-box-container">
+       
+            </div>
+         </div>
+        </div>
+        <div class="right-box">
+            <div id="top-element-box">
+                <div  id="top-element-box1">
+                    <i class="fa-solid fa-person-shelter"></i>
+                    <h3 id="room">Room</h3>
+                </div>
+                <div  id="top-element-box2">
+                    <button id="leaveBtn"> <a href="/">Leave Chat</a> </button>
+
+                </div>
+            </div>
+            <hr>
+            <form id="chatMsg">
+                <div id="message-box">
+                 
+                 
+                </div>
+                <hr>
+                <div id="input-box">
+                 <input type="text" id="chat" placeholder="Your Message">
+               
+                 <button type="submit" id="sendBtn">  <i class="fa-solid fa-paper-plane"></i>  Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/quickchat.js"></script>
+</body>
+</html>

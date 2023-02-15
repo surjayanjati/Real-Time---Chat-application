@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/fe459fdc23.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="box1">
+        <div class="action-btn">
+          <button class="actionbtn" id="signup">Quick Chat</button>
+          <button class="actionbtn" id="login">Secure Chat</button>
+          <button class="toggle">Quick Chat</button>
+        </div>
+      </div>
+      <div class="box2">
+        <form action="/quickchat" class="quickChat"  id="quickChatForm" >
+          <div class="form-box">
+            <div class="form-headingbox">
+              <h3>Kindly Join</h3>
+              <h3 id="heading">To Enter a Quick Chat</h3>
+            </div>
+            <div class="form-element-box">
+              <input type="text" id="name" placeholder="Your Name" />
+            </div>
+            <div class="form-element-box">
+              <input type="text" id="groupName" placeholder="Group Name" />
+            </div>
+            
+          </div>
+          <div class="button-box">
+            <button   class="join">Open</button>
+          </div>
+        </form>
+        <form  class="secondChat hideChat"  style="position: absolute;" >
+          <div class="form-box">
+            <div class="form-headingbox">
+              <h3>Kindly Create</h3>
+              <h3 id="heading">A Secure Group Chat</h3>
+            </div>
+            <div class="form-element-box">
+              <input type="text" id="user" name="user" placeholder="Your Name" />
+            </div>
+            <div class="form-element-box">
+              <input type="text" id="group" name="group" placeholder="Create Group" />
+            </div>
+            <div class="form-element-box">
+              <input type="text" id="Password" name="password" placeholder="Password" />
+            </div>
+          </div>
+          <div class="button-box">
+            <button type="submit"   class="join">Create</button>
+            <br>
+           <button type="button" onclick="loginBoxOpen()" id="login-secureChat">Want to Join a Existing  Chat?</button>
+          </div>
+       
+        </form>
+        <form  class="loginChat hideChat"  style="position: absolute;" >
+          <div class="form-box">
+            <div class="form-headingbox">
+              <h3>Kindly Join</h3>
+              <h3 id="heading">To Enter a Secure Chat</h3>
+            </div>
+            <div class="form-element-box">
+              <input type="text" name="loginUser" id="loginUser" placeholder="Your Name" />
+            </div>
+            <div class="form-element-box">
+              <input type="text" name="loginGroupName" id="loginGroupName" placeholder="Join Group" />
+            </div>
+            <div class="form-element-box">
+              <input type="text" name="loginPassword" id="loginPassword" placeholder="Password" />
+            </div>
+          </div>
+          <div class="button-box">
+            <button  type="submit" class="join">Join</button>
+            <br>
+            <a href="/">   <i class="fa-solid fa-arrow-left"></i></a>
+            <br>
+           <p>Back To QuickChat</p>
+          </div>
+       
+        </form>
+      </div>
+      
+    </div>
+
+    <script src="/js/home.js"></script>
+
+  </body>
+</html>
